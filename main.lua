@@ -1,4 +1,5 @@
 c = 'magenta'
+size = 12
 state = false
 function setup()
     createWindow(400, 400);
@@ -8,11 +9,11 @@ end
 function draw()
     background(c);
     textSize(56);
-    text('Salut',50, 50);
+    text('Salut', width/2, 50);
     circle(50, 70, 32)
     line(0, mouseY, width, mouseY);
     line(mouseX, 0, mouseX, height);
-    
+    circle(mouse/2, mouse/2 , size);
 end
 
 function mousePressed()
@@ -22,5 +23,6 @@ function mousePressed()
         c = 'magenta'
     end
 
+    size = size + 5;
     state = not state
 end
