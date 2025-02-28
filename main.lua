@@ -13,7 +13,7 @@ function draw()
     circle(50, 70, 32)
     line(0, mouseY, width, mouseY);
     line(mouseX, 0, mouseX, height);
-    circle(mouse/2, mouse/2 , size);
+    --circle(mouse/2, mouse/2 , size);
 end
 
 function mousePressed()
